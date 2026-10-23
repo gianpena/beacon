@@ -61,6 +61,7 @@ Read `ARCHITECTURE.md` before touching anything.
    subscriber drains. Then a sustained load test: N tasks, minutes,
    `Dropped (Reliable) = 0` at the end. Always.
 3. **Decide the open questions** (below), then change the code to match.
+- Team C has decided to move forward with item two of the four open decisions
 4. **Make the bridge honest.** Measure loss on a real LAN, not loopback.
    Report sequence gaps. Write the page that says what Reliable means
    when the transport underneath is UDP, and compare to DDS RELIABLE
