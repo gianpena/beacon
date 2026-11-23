@@ -97,6 +97,8 @@ cd demo  && alr build && ./bin/inproc_demo
 # two terminals:
 ./bin/net_subscriber 239.255.0.1 5000 5
 ./bin/net_publisher  239.255.0.1 5000 1000
+# persistent publisher (count 0 = forever; Ctrl-C to stop):
+./bin/net_publisher  239.255.0.1 5000 0
 alr with gnatprove && alr exec -- gnatprove -P beacon.gpr --mode=flow
 ```
 
